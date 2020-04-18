@@ -1,0 +1,78 @@
+#sumario{
+    color: white;
+    background: #F66B6B;
+    width: 60%;
+    /*margin: 0 auto;*/
+    padding: 3% 5%;
+    border-radius: 8px;
+    height: 100%;
+}
+
+#sumario h3 {
+    margin-bottom: 5%;
+}
+
+#sumario h4{
+    margin-bottom: 4%;
+}
+
+.img-covid {
+    width: 70%;
+    height: auto;
+    margin: auto;
+}
+
+#div-apresentacao{
+    width: 80%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 3% 1%;
+}
+
+h2, p{
+    color: white;
+}
+
+h2{
+    margin-bottom: 2%;
+    font-size: 30px;
+}
+p{
+    line-height: 22px;
+    margin-bottom: 1%;
+}
+
+ul {
+    margin-top: 10px;
+}
+ul li{
+    text-indent: 100px;
+    color: white;
+}
+
+section{
+    
+    width: 60%;
+    margin: 20px auto;
+}
+a{
+    color: white;
+}
+
+.manchete{
+    width: 100%;
+    background: rgb(168, 9, 9);/*rgba(202, 23, 23, 0.74);*/
+    height: 60px;
+    align-items: center;
+    justify-content: center;
+    margin: 5% 0 3%;
+}
+
+.manchete h2{
+    text-align: center;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

@@ -1,0 +1,67 @@
+<html>
+
+    <head>
+        <link rel='stylesheet' href='../geral-styles.css' />
+        <link rel='stylesheet' href='./styles.css' />
+        <meta charset="UTF-8" />
+
+        <script src="../jquery.min.js"></script>
+        <script>
+            $("#my-form").submit(function(e) {
+                e.preventDefault();
+
+                var $form = $(this);
+                $.post($form.attr("action"), $form.serialize()).then(function() {
+                    alert("Obrigado pelo contato!");
+                });
+            });
+        </script>
+
+    </head>
+    
+    <body>
+        <div class="container">
+            <h1 class='title-website'>Covid News</h1>
+
+            <nav>
+
+                <a class="tab-nav" href="../home/index.html"> Covid News </a>
+                
+                <a class="tab-nav" href="../sobre/index.html"> Sobre </a>
+
+                <a class="tab-nav-selected tab-nav" href="#"> Contato </a>
+                
+                <a class="tab-nav" href="../saibaMais/index.html"> Saiba Mais </a>
+
+            </nav>
+
+            <div class='form-contact'>
+
+                <h2>Entre em contato!</h2>
+
+                <form name='contact' method="POST" data-netlify="true" id='my-form'>
+                    <div>
+                        <label>Nome</label>
+                        <input type='text' name='name' />                            
+                    </div>
+                    <div>
+                        <label for='email'> Email </label>
+                        <input type='email' name='email'/>
+                    </div>
+
+                    <div>
+                        <label for='coment'>Comentário</label>
+                        <textarea name='coment'></textarea>
+                    </div>
+
+                    <input type='submit' value='Enviar' class='send-button'/>
+
+                </form>
+
+            </div>
+
+        </div>
+
+    </body>
+
+</html>

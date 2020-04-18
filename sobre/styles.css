@@ -1,0 +1,37 @@
+
+.content{
+    width: 70%;
+    color: white;
+    padding: 0 1%;
+    margin: auto;
+}
+
+.content a{
+    color: white;
+}
+
+h2{
+    margin: 2% 0;
+}
+
+.espaco-foto{
+    width: 350px;
+    height: 450px;
+    background: white;
+    float: left;
+    margin-right: 20px;
+    border-radius: 10px;
+}
+
+.igualar-classes{
+    clear: both;
+}
+
+.icon{
+    margin-bottom: -5px;
+}
+
+.foto{
+    width: 350px;
+    border-radius: 10px;
+}
